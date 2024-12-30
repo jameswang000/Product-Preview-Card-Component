@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Preview Card Component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../product-preview-card-component-main/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body
+    class="flex flex-row items-center justify-center w-screen h-screen px-5 py-7 bg-cream"
+  >
+    <main
+      class="flex flex-col w-full overflow-hidden bg-white rounded-md sm:w-[45rem] sm:flex-row"
+    >
+      <div class="sm:w-1/2 sm:relative">
+        <img
+          class="object-cover object-center w-full sm:hidden"
+          src="../product-preview-card-component-main/images/image-product-mobile.jpg"
+          alt="Bottle of Chanel Perfume"
+        />
+        <img
+          class="inset-0 hidden object-cover object-center w-full h-full sm:block sm:absolute"
+          src="../product-preview-card-component-main/images/image-product-desktop.jpg"
+          alt="Bottle of Chanel Perfume"
+        />
+      </div>
+      <div
+        class="flex flex-col justify-center max-w-sm gap-5 p-6 sm:w-1/2 sm:p-7"
+      >
+        <aside
+          class="font-[500] text-base tracking-[0.4em] uppercase text-dark_gray_blue font-montserrat"
+        >
+          Perfume
+        </aside>
+        <h1 class="font-fraunces text-4xl font-[700]">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p class="text-dark_gray_blue text-base font-montserrat font-[500]">
+          A floral, solar and volumptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="flex flex-row items-center justify-start">
+          <data
+            class="font-[700] text-4xl text-dark_cyan font-fraunces"
+            value="149.99"
+            >&dollar;149.99</data
+          >
+          <data class="ml-3 line-through text-dark_gray_blue" value="169.99"
+            >&dollar;169.99</data
+          >
+        </div>
+        <a
+          class="flex flex-row items-center justify-center py-3 rounded-md hover:bg-very_dark_cyan hover:shadow-md hover:cursor-pointer bg-dark_cyan"
+          href="#"
+        >
+          <img
+            src="../product-preview-card-component-main/images/icon-cart.svg"
+            alt="icon of a shopping cart"
+          />
+          <p class="ml-3 text-base text-white font-montserrat font-[700]">
+            Add to Cart
+          </p>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
